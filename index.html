@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FROM_DB_TO_DB APPLICATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p style="text-align:center"><strong>[FROM_DB_TO_DB APPLICATION]</strong></p>
+
+        <p style="text-align:center"><span style="font-size:14px"><strong>Данная инструкция относится к пользователям, </strong></span></p>
+
+        <p style="text-align:center"><span style="font-size:14px"><strong>которые захотели использовать данное приложение через командную строку.</strong></span></p>
+
+        <p>Что необходимо сделать для запуска приложения из CMD.</p>
+
+        <ol>
+            <li>Создать файл с расширением .groovy</li>
+            <li>Сохранить в нем следующие настройки:</li>
+        </ol>
+
+        <p>data=<br />
+            [<br />
+            &nbsp;&nbsp; &nbsp;&quot;from&quot;:<br />
+            &nbsp;&nbsp; &nbsp;[<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;USER&quot;:&quot;<strong>USERNAME</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;PASS&quot;:&quot;<strong>PASS</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;CONNECTION_STRING&quot;:&quot;<strong>jdbc:sqlserver://;servername=OTZ-prod1;integratedSecurity=true</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;DRIVER&quot;:&quot;<strong>com.microsoft.sqlserver.jdbc.SQLServerDriver</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;QUERY&quot;:&quot;<strong>select * from asddgasdgasdgasgd</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;NAME_FIELD&quot;:&quot;<strong>asdgsdg</strong>&quot;<br />
+            &nbsp;&nbsp; &nbsp;],<br />
+            &nbsp;&nbsp; &nbsp;<br />
+            &nbsp;&nbsp; &nbsp;&quot;to&quot;:<br />
+            &nbsp;&nbsp; &nbsp;[<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;USER&quot;:&quot;<strong>USERNAME</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;PASS&quot;:&quot;<strong>PASS</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;BATCH_INSERT&quot;:<strong>5000</strong>,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;CONNECTION_STRING&quot;:&quot;<strong>jdbc:sqlserver://;servername=OTZ-prod1;integratedSecurity=true</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;DRIVER&quot;:&quot;<strong>com.microsoft.sqlserver.jdbc.SQLServerDriver</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;QUERY&quot;:&quot;<strong>insert into sdsdgsgd values (?, ?, ? asdsgsagasdgasdg)</strong>&quot;,<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;NAME_FIELD&quot;:&quot;<strong>111111</strong>&quot;<br />
+            &nbsp;&nbsp; &nbsp;]<br />
+            ]</p>
+
+        <p>3. <span style="color:#ff0000">Важно! </span><strong>Не нужно менять структуру настроек.</strong></p>
+
+        <p>Все, что от вас требуется:</p>
+
+        <p><strong>- установить настройки для исходящего подключения БД</strong></p>
+
+        <p><strong>- установить настройки для входящего подключения БД</strong></p>
+
+        <p><span style="color:#ff0000">Важно!</span> <strong>Все настройки должны быть в одну строку.</strong></p>
+
+        <p>4. После того, как вы создали и заполнили файл настроек, его необходимо сохранить в удобном для Вас месте.</p>
+
+        <p>5. Создание bat файла для запуска файла настроек:</p>
+
+        <p>- создаете файл с расширением .bat</p>
+
+        <p>- указываете в нем:</p>
+
+        <p>echo off<br />
+            <strong>%JAVA_HOME%\bin\java</strong> -jar &quot;<strong>E:\_own_repository_data\groovy\trunk\from_db_to_db_gui-\dist\from_db_to_db_gui.jar</strong>&quot; &quot;<strong>C:\Users\ezhov_da\Desktop\groovy_test_reader.groovy</strong>&quot;</p>
+
+        <p>где:</p>
+
+        <p><strong>%JAVA_HOME%\bin\java</strong>&nbsp; - путь к Java в Вашей системе, если в переменной окружения не настроена %JAVA_HOME%&nbsp; - укажите полный путь,</p>
+
+        <p>например: C:\jre1.8.0_121_x86\bin\java.exe</p>
+
+        <p>&quot;<strong>E:\_own_repository_data\groovy\trunk\from_db_to_db_gui-\dist\from_db_to_db_gui.jar</strong>&quot;&nbsp; - абсолютный путь к файлу приложения</p>
+
+        <p>&quot;<strong>C:\Users\ezhov_da\Desktop\groovy_test_reader.groovy</strong>&quot;&nbsp; - абсолютный путь к файлу настроек</p>
+
+        <p>&nbsp;</p>
+
+        <p>После чего сохраняете bat файл и можете запускать.</p>
+
+        <p>Весь лог выводится в файл <strong>fdtd.log</strong> папки приложения.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+    </body>
+</html>
