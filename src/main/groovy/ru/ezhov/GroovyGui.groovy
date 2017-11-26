@@ -21,6 +21,7 @@ class GroovyGui {
         }
 
         try {
+            ConfigReader.instance.reload()
             Loader.loadDll()
             Loader.loadJar()
         } catch (Throwable tr) {

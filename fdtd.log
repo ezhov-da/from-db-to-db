@@ -1,2 +1,12 @@
-ноя 26, 2017 10:44:33 PM java_util_logging_Logger$log$0 call
-WARNING: Cannot get property 'dllLibrary' on null object
+ноя 26, 2017 11:02:06 PM java_util_logging_Logger$info$0 call
+INFO: устанавливаем пути dll
+ноя 26, 2017 11:02:06 PM java_util_logging_Logger$log$1 call
+INFO: 64: C:\Users\rrnezh\programmer\git\from-db-to-db-desktop-app\dll\dll\x64
+ноя 26, 2017 11:02:06 PM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+INFO: Load path JARS: jars
+ноя 26, 2017 11:02:06 PM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+INFO: Load absolute path JARS: C:\Users\rrnezh\programmer\git\from-db-to-db-desktop-app\jars
+ноя 26, 2017 11:02:06 PM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSite invoke
+INFO: []
+ноя 26, 2017 11:02:06 PM org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap invoke
+INFO: LoadJARS: []

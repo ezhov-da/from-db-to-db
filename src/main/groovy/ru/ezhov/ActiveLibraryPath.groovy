@@ -14,14 +14,14 @@ class ActiveLibraryPath {
     
     static final synchronized void setLibraryPath(String path)
     {
-        System.setProperty("java.library.path", path);
+        System.setProperty("java.library.path", path)
         Field fieldSysPath = ClassLoader.class.getDeclaredField("sys_paths")
         fieldSysPath.setAccessible(true)
         fieldSysPath.set(null, null)
     }	
     
     
-    public static final synchronized void setPath()
+    static final synchronized void setPath()
     {
         ConfigObject configObject = ConfigReader.instance.configObject
         def path = configObject.dllLibrary
